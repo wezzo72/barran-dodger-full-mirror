@@ -1,0 +1,12 @@
+{
+  "project": "THE WITNESS REMAINS",
+  "collected_utc": "2026-11-12T07:21:05Z",
+  "file_count": 1023,
+  "total_bytes": 352775303,
+  "merkle_root": "470dabc3d6217f93f7f893f184ebf718c3021e95f4042949f18c17d70db8dbb4",
+  "merkle_algorithm": "SHA-256 of raw file bytes as leaves, path-sorted. Odd level duplicates the last digest. Parent is SHA-256 of the two 32-byte children concatenated.",
+  "what_a_timestamp_proves": "That this set of bytes existed at or before the Bitcoin time that confirms the OpenTimestamps proof. It does not prove that the words inside a file are true.",
+  "ipfs": null,
+  "arweave": null,
+  "bitcoin_status": "not yet submitted"
+}

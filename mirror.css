@@ -1,0 +1,7 @@
+body{margin:0;background:#F6F1E7;color:#1C1915;font:18px/1.55 Georgia,Times,serif}
+a{color:#8B2E2A}
+h1,h2,h3{color:#1B2A4A;line-height:1.15}
+.mirror-note,.mirror-nav{margin:0;padding:.6rem 1rem;background:#1B2A4A;color:#F6F1E7;font:700 15px/1.4 Verdana,sans-serif}
+.mirror-note a,.mirror-nav a{color:#C4A35A}
+main{padding:1rem 1rem 3rem;max-width:42rem}
+img,video,iframe{max-width:100%;height:auto}

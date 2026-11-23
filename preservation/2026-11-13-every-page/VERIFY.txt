@@ -1,0 +1,10 @@
+How to check one page
+
+1. Download the page file named in PAGES.jsonl.
+2. SHA-256 the raw bytes. It must equal the sha256 field.
+3. Leaf = SHA-256 of the byte 0x00 followed by that 32-byte hash.
+4. Walk INCLUSION_PROOFS.jsonl. Side L means the sibling is on the left. Side R means it is on the right. Parent = SHA-256 of the byte 0x01 followed by left then right.
+5. The result must equal MERKLE_ROOT.txt.
+6. Verify MERKLE_ROOT.txt.ots at https://opentimestamps.org once the calendars have anchored it to Bitcoin.
+
+A match means these bytes existed. It does not mean the words are true.

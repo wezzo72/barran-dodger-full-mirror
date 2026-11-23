@@ -1,0 +1,39 @@
+THE WITNESS REMAINS
+BLOCKCHAIN EVIDENCE REGISTER — HOW TO CHECK
+Collected 2026-11-12T07:21:05Z
+
+WHAT WAS HASHED
+1,023 files. 352,775,303 bytes.
+Paths under content/mirror, public, src, commands and scripts.
+The new folder public/preservation/2026-11-12 was not included in its own tree.
+node_modules and the build output were not included.
+There is no git history in this workspace, so earlier versions that are not still on disk were not hashed.
+No IPFS CID was created. No Arweave transaction was created. Those tools are not available here.
+
+THE FILE HASH
+SHA-256 of the raw bytes. The same value as sha256sum.
+MANIFEST.jsonl has one JSON object per line: path, bytes, sha256, collected_utc.
+
+THE MERKLE ROOT
+470dabc3d6217f93f7f893f184ebf718c3021e95f4042949f18c17d70db8dbb4
+Leaves are those SHA-256 digests, in path order.
+If a level has an odd count, the last digest is repeated.
+A parent is SHA-256 of the two 32-byte children joined together.
+This root was recomputed from the manifest and it matched.
+
+THE TIMESTAMP
+OpenTimestamps receipts were created for MERKLE_ROOT.txt, SUMMARY.json and MANIFEST.jsonl.
+Submitted to the public calendars. Status at creation: PENDING.
+Pending is not a Bitcoin confirmation.
+A confirmed proof, when it arrives, shows that these bytes existed at or before that Bitcoin time.
+It does not show that the words inside a file are true.
+
+CHECK ONE FILE
+sha256sum the file.
+Find its path in MANIFEST.jsonl.
+The two hashes must be the same.
+
+CHECK THE ROOT LATER
+ots upgrade MERKLE_ROOT.txt.ots
+ots verify MERKLE_ROOT.txt
+Until upgrade succeeds, the anchor is pending. Do not call it confirmed.

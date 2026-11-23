@@ -1,0 +1,18 @@
+{
+  "project": "THE WITNESS REMAINS",
+  "what": "Every page of the website, one file per route",
+  "collected_utc": "2026-11-13T02:15:43Z",
+  "page_count": 499,
+  "total_bytes": 62902699,
+  "merkle_root": "0189f65c26a680eda64be8edfc8d0f004119beca021159cc3bd5527dfe2a6718",
+  "merkle_algorithm": "Pages sorted by route. File hash is SHA-256 of the raw page file. Leaf is SHA-256(0x00 || file hash). If a level has an odd count, the last digest is duplicated. Parent is SHA-256(0x01 || left || right). Every inclusion proof was recomputed to the root in this run.",
+  "what_a_timestamp_proves": "That these page bytes existed at or before the Bitcoin time that confirms the OpenTimestamps proof. It does not prove that the words on a page are true.",
+  "bitcoin_status": "Submitted 2026-11-13T02:15:43Z to four OpenTimestamps calendars: alice, bob, finney, catallaxy. Each returned a pending attestation. No Bitcoin transaction id has been issued yet. The proof file is MERKLE_ROOT.txt.ots.",
+  "pages_not_inside_this_stamp": "Any page created or edited after this UTC time, including the notice that announces this stamp.",
+  "calendars_pending": [
+    "https://alice.btc.calendar.opentimestamps.org",
+    "https://bob.btc.calendar.opentimestamps.org",
+    "https://finney.calendar.eternitywall.com",
+    "https://btc.calendar.catallaxy.com"
+  ]
+}

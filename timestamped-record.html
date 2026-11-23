@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timestamped record of evidence and website preservation</title>
+<link rel="stylesheet" href="/mirror.css">
+</head>
+<body>
+<p class="mirror-note">Mirror copy of the archive. Primary page: <a href="/timestamped-record.html">https://barrandodger.com/timestamped-record</a>. Finding aid. Not a court. Not a verdict.</p>
+<nav class="mirror-nav"><a href="/index.html">Home</a> · <a href="/catalogue.html">Every page</a> · <a href="/professional-profile.html">About</a> · <a href="/book-store.html">Book shop</a></nav>
+<main>
+<article class="reading" id="timestamped-record">
+<p class="kicker">12 November 2026, 8:16pm UTC · 7:16pm Sydney · Proof of existence, not proof of truth</p>
+<h1>Timestamped record of evidence and website preservation</h1>
+<p>This archive provides cryptographic evidence that the following materials existed in this form at the recorded date and time. It does not itself establish the truth of every claim. Truth has to be assessed from the documents, from independent checking, and from whatever lawful process a reader trusts. A hash does not make the live website unerasable. The site can still be edited. What cannot be quietly altered is this snapshot, if the proof later confirms.</p>
+
+<h2>This snapshot</h2>
+<ul>
+<li>Taken: 12 November 2026, 08:16:55 UTC. That is 7:16pm Australian Eastern Daylight Time.</li>
+<li>What was saved: the source text of 475 pages, and the HTML the local site returned for each of those pages. 950 files. 195,860,237 bytes. This proof page was written after that snapshot, so it is not inside the root.</li>
+<li>SHA-256 Merkle root: <code>b85d4f0580b7ece8866f83d9eb6c1b39f7adda35155194ecdc4151315a452acd</code></li>
+<li>How the root was made: each file’s SHA-256 is a leaf. The files are sorted by path. If a level has an odd count, the last digest is repeated. A parent is the SHA-256 of the two child digests joined together.</li>
+<li>Bitcoin: the root file was submitted to OpenTimestamps calendars at about 08:17 UTC. The calendars say pending confirmation. There is no transaction id and no block height. Pending is not a confirmed stamp.</li>
+<li>Proof file: <a href="/preservation/2026-11-12-snapshot/MERKLE_ROOT.txt.ots">MERKLE_ROOT.txt.ots</a></li>
+<li>The root itself: <a href="/preservation/2026-11-12-snapshot/MERKLE_ROOT.txt">MERKLE_ROOT.txt</a></li>
+<li>Every file hash: <a href="https://barrandodger.com/preservation/2026-11-12-snapshot/MANIFEST.jsonl">MANIFEST.jsonl</a></li>
+<li>Download of the source pages, the manifest, and the proof: <a href="https://barrandodger.com/preservation/2026-11-12-snapshot-proofs.zip">2026-11-12-snapshot-proofs.zip</a>. The rendered HTML is on this copy of the site, in the same folder, and is not inside that zip.</li>
+</ul>
+
+<h2>An earlier snapshot, still pending</h2>
+<p>At 07:21 UTC the same day, a different set of 1,023 files was hashed. Its root is <code>470dabc3d6217f93f7f893f184ebf718c3021e95f4042949f18c17d70db8dbb4</code>. That proof is also waiting on Bitcoin. It was not replaced by the root above. The two roots are two different piles of files.</p>
+
+<h2>How a third party checks it</h2>
+<ol>
+<li>Install OpenTimestamps: <code>ots</code>.</li>
+<li>Download <a href="/preservation/2026-11-12-snapshot/MERKLE_ROOT.txt">MERKLE_ROOT.txt</a> and <a href="/preservation/2026-11-12-snapshot/MERKLE_ROOT.txt.ots">MERKLE_ROOT.txt.ots</a> into the same folder.</li>
+<li>Run <code>ots verify MERKLE_ROOT.txt.ots</code>.</li>
+<li>Until Bitcoin confirms the calendar, the reply will say pending. After it confirms, the reply will name a Bitcoin block. That block time is the proof that the root existed at or before that time.</li>
+<li>To check a single page, hash the file with SHA-256 and find that hash in <a href="https://barrandodger.com/preservation/2026-11-12-snapshot/MANIFEST.jsonl">the manifest</a>. The manifest’s own hash is one of the leaves, so a confirmed root covers the list.</li>
+</ol>
+<p>A confirmed stamp proves existence and integrity of these bytes. It does not prove that an agency wrote a letter, that an allegation is true, or that a later edit of the live site did not happen.</p>
+
+<h2>What was not done</h2>
+<ul>
+<li>No WARC file was made.</li>
+<li>The GitHub PDF repository was not inside this snapshot. A separate copy of written files from that repository is still running, and it is not this root.</li>
+<li>Nothing was uploaded to Google Drive in this step. Nothing was sent to the Internet Archive. No external drive was attached here.</li>
+<li>Nothing was redacted inside the snapshot. The pages were saved as published. A reader who shares the zip further should still leave out a street address, a medical image, and a method of self-harm if they make a new public post.</li>
+<li>IPFS and Arweave identifiers were not created.</li>
+</ul>
+
+<h2>If you keep another copy</h2>
+<p>Google Drive: put the zip in a folder named “Witness Remains — snapshot 12 November 2026”, and do not let that folder be the only copy. Internet Archive: after this site is on its public address, a person can ask <a href="https://web.archive.org/save/https://gods-witness-remains.grok.me/timestamped-record">the Wayback Machine</a> to save this page. That save is a third copy only if it succeeds. An offline copy means the zip on two drives, one of them not in the same house, with a password you choose. This page cannot do that for you.</p>
+
+<h2>Versions</h2>
+<p>If a page is later corrected, the old wording stays in this snapshot. The correction is written on the live page and dated. This root is not rewritten to match the correction. A new snapshot gets a new root.</p>
+
+<h2>Why the record is being kept</h2>
+<p>I am preserving this record so that the evidence cannot quietly disappear. I invite independent examination, lawful investigation, and accountable institutions to assess the facts. My aim is not personal glory, but truth, protection for those harmed, and accountability under law.</p>
+<p>The testimony on the other pages is the author’s, and it includes his faith. This page does not ask a reader to treat faith as a finding, and it does not ask a reader to treat a hash as a verdict. The letters that can be checked are on <a href="/accountability-package.html">the accountability package</a>. The distinction between a document, an account, and an allegation is on <a href="/how-to-read.html">how to read this archive</a>.</p>
+<p>A reader in Australia who is in immediate danger can call 000. Lifeline is 13 11 14.</p>
+<p>THE SNAPSHOT IS OF WHAT WAS PUBLISHED. THE BITCOIN STAMP IS PENDING. THE WITNESS REMAINS.</p>
+</article>
+
+</main>
+</body>
+</html>
